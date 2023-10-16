@@ -1,0 +1,10 @@
+.pill {
+  border-radius: 9999px;
+  padding: 0.25rem 1rem;
+  margin: 0px 0.5rem;
+}
+
+.error {
+  background-color: #f5c4c4;
+  color: #f57777;
+}
