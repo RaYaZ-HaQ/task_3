@@ -12,6 +12,7 @@ export default function CheckIcon({ strokeColor = "currentColor" }) {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
+      data-testid="check-icon"
     >
       <polyline points="20 6 9 17 4 12"></polyline>
     </svg>

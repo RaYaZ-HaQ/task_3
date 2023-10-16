@@ -16,6 +16,7 @@ export default function LoaderIcon({
       strokeLinecap="round"
       strokeLinejoin="round"
       className={className}
+      data-testid="loading-icon"
     >
       <line x1="12" y1="2" x2="12" y2="6"></line>
       <line x1="12" y1="18" x2="12" y2="22"></line>

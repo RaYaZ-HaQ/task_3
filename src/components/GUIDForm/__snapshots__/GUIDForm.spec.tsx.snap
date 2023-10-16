@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form tests should match snapshot 1`] = `
+<div>
+  <form
+    class="flex-container-column spacing-20"
+  >
+    <span>
+      <label>
+        Enter a valid GUID here.
+      </label>
+    </span>
+    <input
+      id="guid"
+      name="guid"
+      type="text"
+    />
+    <button
+      class="button flex-container items-center border-black"
+    >
+      <span>
+        Submit
+      </span>
+    </button>
+  </form>
+</div>
+`;

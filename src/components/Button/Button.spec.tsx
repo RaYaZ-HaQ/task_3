@@ -1,27 +1,26 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/react";
 import Button from ".";
 
 describe("Button tests", () => {
   it("should match snapshot", () => {
-    const button = render(<Button>Button text</Button>);
+    const { container } = render(<Button>Button text</Button>);
 
-    expect(button).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 
-  it("should show loading icon when loading", () => {
+  it("should show loading icon when loading", async () => {
     render(<Button loading>Button text</Button>);
 
-    const spinningLoader = document.getElementsByClassName("spin");
-    expect(spinningLoader).toHaveLength(1);
+    const loader = await screen.findByTestId("loading-icon");
+    expect(loader).toBeTruthy();
   });
 
-  it("should show check mark icon when success", () => {
+  it("should show check mark icon when success", async () => {
     render(<Button success>Button text</Button>);
 
-    const svgs = document.getElementsByTagName("svg");
-    expect(svgs).toHaveLength(1);
-    expect(svgs[0].getAttribute("stroke")).toEqual("green");
+    const successIcon = screen.getByTestId("check-icon");
+    expect(successIcon).toBeTruthy();
+    expect(successIcon.getAttribute("stroke")).toEqual("green");
   });
 });
