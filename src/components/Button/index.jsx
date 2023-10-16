@@ -5,13 +5,14 @@ import LoaderIcon from "../../assets/icons/LoaderIcon";
 /* eslint-disable react/prop-types */
 export default function Button({
   children,
-  onClick,
+  onClick = () => null,
   loading = false,
   success = false,
 }) {
   return (
     <button
       onClick={onClick}
+      disabled={loading}
       className="button flex-container items-center border-black"
     >
       {!loading && success && <CheckIcon strokeColor="green" />}

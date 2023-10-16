@@ -39,6 +39,7 @@ export default function GUIDForm() {
         type="text"
         name="guid"
         id="guid"
+        disabled={status === STATUS.LOADING}
         onChange={(e) => setGuid(e.target.value)}
       />
       <Button
