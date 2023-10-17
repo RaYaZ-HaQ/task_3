@@ -1,16 +1,23 @@
 .button {
-  border-radius: 9999px; /* Rounded ends */
-  background-color: #c3c3e5;
-  padding: 0.25rem 0.75rem;
-  font-size: 1rem;
-  font-family: Arial, Helvetica, sans-serif;
-  letter-spacing: 0.075rem;
+  border-radius: 0.25rem;
+  border: 1px solid var(--blue);
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  font: normal 600 calc(1rem - 2px) / 150% Arial, Helvetica, sans-serif;
   width: fit-content;
+  min-height: 2.5rem;
+  color: var(--blue);
 }
 
 .button:hover {
   cursor: pointer;
-  background-color: #c5c5f5;
+  background-color: var(--blue-light);
+}
+
+.button:disabled {
+  border-color: var(--disabled);
+  color: var(--disabled);
+  background-color: var(--white);
 }
 
 .spin {

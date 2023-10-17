@@ -13,7 +13,7 @@ export default function Button({
     <button
       onClick={onClick}
       disabled={loading}
-      className="button flex-container items-center border-black"
+      className="button flex-container items-center"
     >
       {!loading && success && <CheckIcon strokeColor="green" />}
       {loading && <LoaderIcon className="spin" />}
