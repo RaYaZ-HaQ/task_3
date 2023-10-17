@@ -29,16 +29,17 @@ export default function GUIDForm() {
 
   return (
     <form className="flex-container-column spacing-20">
-      <span>
+      <div>
         <label>Enter a valid GUID here.</label>
         {status === STATUS.ERROR && (
           <span className="pill error">GUID Invalid</span>
         )}
-      </span>
+      </div>
       <input
         type="text"
         name="guid"
         id="guid"
+        className="text-field"
         disabled={status === STATUS.LOADING}
         onChange={(e) => setGuid(e.target.value)}
       />

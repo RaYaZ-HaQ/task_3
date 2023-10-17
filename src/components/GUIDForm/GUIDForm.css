@@ -8,3 +8,10 @@
   background-color: #f5c4c4;
   color: #d15656;
 }
+
+.text-field {
+  border: 1px solid var(--black-light);
+  background-color: var(--white);
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+}

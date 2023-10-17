@@ -1,6 +1,8 @@
 :root {
   --blue: #2183df;
   --white: #ffffff;
+  --gray: #f8f8f8;
+  --black-light: #21212185;
   --blue-light: #2183df0a;
   --disabled: #21212152;
 }
@@ -13,7 +15,7 @@
 }
 
 body {
-  background: #e5e5e5;
+  background: var(--gray);
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
