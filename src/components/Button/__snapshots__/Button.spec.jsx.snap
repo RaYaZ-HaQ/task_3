@@ -3,7 +3,7 @@
 exports[`Button tests should match snapshot 1`] = `
 <div>
   <button
-    class="button flex-container items-center border-black"
+    class="button flex-container items-center"
   >
     <span>
       Button text
