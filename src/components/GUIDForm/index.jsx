@@ -29,7 +29,7 @@ export default function GUIDForm() {
 
   return (
     <form className="flex-container-column spacing-20">
-      <div>
+      <div className="flex-container items-center">
         <label>Enter a valid GUID here.</label>
         {status === STATUS.ERROR && (
           <span className="pill error">GUID Invalid</span>

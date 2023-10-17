@@ -15,7 +15,9 @@ exports[`Application tests should match snapshot 1`] = `
         <form
           class="flex-container-column spacing-20"
         >
-          <div>
+          <div
+            class="flex-container items-center"
+          >
             <label>
               Enter a valid GUID here.
             </label>
