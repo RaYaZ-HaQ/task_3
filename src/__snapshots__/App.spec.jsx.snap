@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Application tests should match snapshot 1`] = `
+<div>
+  <main
+    class="flex-container spacing-20 padding-20"
+  >
+    <div
+      class="flex-container-column flex-1 spacing-20"
+    >
+      <div
+        class="box border-black padding-20"
+        id="box-2"
+      >
+        <form
+          class="flex-container-column spacing-20"
+        >
+          <span>
+            <label>
+              Enter a valid GUID here.
+            </label>
+          </span>
+          <input
+            id="guid"
+            name="guid"
+            type="text"
+          />
+          <button
+            class="button flex-container items-center border-black"
+          >
+            <span>
+              Submit
+            </span>
+          </button>
+        </form>
+      </div>
+      <div
+        class="box border-black padding-20 max-w-1/4"
+        id="box-3"
+      >
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nisi nobis labore repudiandae dolores incidunt voluptatibus architecto, quos dignissimos, qui fugiat magnam. Dicta, iure optio aspernatur dignissimos perspiciatis quo voluptatem!
+        </p>
+      </div>
+    </div>
+    <div
+      class="box image-container flex-1 border-black"
+      id="box-1"
+    >
+      <img
+        alt="Test image"
+        src="/wallhaven-o52y1l.jpg"
+      />
+    </div>
+  </main>
+</div>
+`;

@@ -5,7 +5,7 @@ function App() {
   return (
     <main className="flex-container spacing-20 padding-20">
       <div className="flex-container-column flex-1 spacing-20">
-        <div className="box border-black padding-20">
+        <div id="box-2" className="box border-black padding-20">
           <Form />
         </div>
         <div id="box-3" className="box border-black padding-20 max-w-1/4">
